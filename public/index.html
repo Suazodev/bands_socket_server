@@ -23,7 +23,11 @@
         name: 'Suazo',
       });
 
-      socket.on('message', function (data) {
+      socket.on('emit-message', function (data) {
+        console.log(data);
+      });
+
+      socket.on('getBands', function (data) {
         console.log(data);
       });
     </script>
